@@ -1,0 +1,106 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 50.25%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  margin:0 auto;
+  width:100%;
+  height:100%;
+}
+
+.btn{
+  position:relative;
+  width: auto;
+  color:#ecf0f1;
+  text-decoration:none;
+  border-radius:5px;
+  border:solid 1px #f39c12;
+  background:#e67e22;
+  text-align:center;
+  padding:16px 18px 14px;
+
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+
+  -webkit-box-shadow: 0px 6px 0px #d35400;
+  -moz-box-shadow: 0px 6px 0px #d35400;
+  box-shadow: 0px 6px 0px #d35400;
+  cursor: pointer;
+}
+
+.btn:active{
+  -webkit-box-shadow: 0px 2px 0px #d35400;
+  -moz-box-shadow: 0px 2px 0px #d35400;
+  box-shadow: 0px 2px 0px #d35400;
+  position:relative;
+  top:4px;
+}
+.btn1{
+  padding:5px 10px;
+  margin: 10px 10px;
+  color: #d35400;
+  border: none;
+  cursor: pointer;
+}
+.btn-wrap{
+  display: flex;
+  justify-content: center;
+  column-gap: 10%;
+  position: relative;
+  left:0;
+  right:0;
+}
+.overlay-con{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  justify-content: center;
+}
+.overlay-con input{
+  max-width:70%;
+  height:auto;
+}
+
+.overlay-full-wrap{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.overlay-left{
+  width: 50%;
+  position: relative;
+  
+}
+.btn-wrap{
+  margin-top: 6%;
+}
+
+@media only screen and (max-width:800px) {
+  .overlay-full-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+  
+  }
+  .overlay-left{
+    width: 100%;
+    position: relative;
+    
+  }
+}
